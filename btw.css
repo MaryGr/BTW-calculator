@@ -42,19 +42,8 @@ section {
 }
 
 .fleks {
-    -ms-box-orient: horizontal;
-    -ms-display: flex;
-    -webkit-display: flex;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    /*IE10!*/
     display: flex;
-    display: flexbox;
-    -webkit-flex-flow: row wrap;
-    -ms-flex-flow: row wrap;
     flex-flow: row wrap;
-    -webkit-justify-content: center;
-    -ms-justify-content: center;
     justify-content: center;
 }
 
