@@ -62,7 +62,7 @@
         </div>
         <div class="rm">
            
-            <?php include("includes/rekenmachine.php") ?>
+            <?php include("rekenmachine.php") ?>
            
         </div>
     </section>
