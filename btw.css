@@ -1,0 +1,447 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: auto;
+    font-family: "Indie Flower", sans-serif;
+    font-size: 100%;
+}
+
+:root {
+    --kleur1: yellow;
+    --kleur2: turquoise;
+}
+
+*,
+*:after,
+*:before {
+    box-sizing: border-box;
+}
+
+section,
+.schoolbord,
+.rm,
+.helft,
+.derde,
+.calculator,
+audio {
+    overflow: hidden
+}
+
+.btw {
+    background-color: rgba(255, 255, 255, .1);
+    box-shadow: 0 0 20px rgba(255, 255, 255, .2);
+    font-size: 140%;
+    color: inherit;
+}
+
+section {
+    outline: 30px solid black;
+    outline-offset: -30px;
+}
+
+.fleks {
+    -ms-box-orient: horizontal;
+    -ms-display: flex;
+    -webkit-display: flex;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    /*IE10!*/
+    display: flex;
+    display: flexbox;
+    -webkit-flex-flow: row wrap;
+    -ms-flex-flow: row wrap;
+    flex-flow: row wrap;
+    -webkit-justify-content: center;
+    -ms-justify-content: center;
+    justify-content: center;
+}
+
+.auto {
+    margin-left: auto;
+    margin-right: auto
+}
+
+.schoolbord,
+.rm {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 60px;
+}
+
+.schoolbord {
+    background: url(../bgr/schoolbord.jpg) #333 no-repeat center center;
+    background-size: cover;
+    width: 60%;
+}
+
+.rm {
+    text-align: center;
+    background-color: gray;
+    background-image: linear-gradient(-45deg, gray, white);
+    width: 40%;
+}
+
+.derde {
+    width: 33.33%;
+    min-height: 50px;
+    position: relative;
+    line-height: 200%;
+}
+
+.derde:nth-child(3n+1) {
+    text-align: right;
+}
+
+.derde:nth-child(3n+2) input{
+    text-align: center;
+    min-width: 200px;
+    
+}
+
+.derde:nth-child(3n+3) input[type=button] {
+    text-align: left;
+    max-width: 40px;
+    cursor: pointer;
+}
+
+label {
+    position: absolute;
+    left: 20%;
+    top: 3px;
+}
+
+.vp {
+    min-height: 100vh
+}
+
+.pad2 {
+    padding: 70px 0
+}
+
+.center {
+    text-align: center
+}
+
+.mob {
+    display: none
+}
+
+a {
+    color: inherit;
+    outline: none;
+    transition: .2s ease;
+}
+
+.yellow {
+    color: yellow;
+    color: var(--kleur1);
+}
+
+.turquoise {
+    color: turquoise;
+    color: var(--kleur2);
+}
+
+p {
+    font-size: 140%;
+    line-height: 150%;
+    padding: 0;
+    color: white;
+}
+
+h1 {
+    font-size: 250%;
+    font-weight: 400;
+    line-height: 40px;
+    text-transform: uppercase;
+    margin: 0;
+    padding: 0;
+    display: block;
+    height: auto;
+    border: 0px solid #ff0000;
+    color: turquoise;
+    letter-spacing: 0px;
+}
+
+h2 {
+    font-size: 150%;
+    font-weight: 400;
+    line-height: 140%;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+    padding: 0;
+    display: block;
+    height: auto;
+    border: 0px solid #ff0000;
+    opacity: .9
+}
+
+h1 span,
+h2 span {
+    font-family: sans-serif
+}
+
+.opzij {
+    position: relative;
+    display: inline-block;
+    transition: all .3s linear;
+}
+
+h2 a.opzij {
+    text-decoration: none;
+}
+
+.opzij:hover {
+    transform: translate(5px, 0);
+    opacity: 1;
+}
+
+.opzij:before {
+    content: "->";
+    opacity: 0;
+    position: absolute;
+    left: 40x;
+    top: 0;
+}
+
+.opzij:hover:before {
+    opacity: 1;
+    left: -25px;
+}
+
+
+/* btw form opmaak*/
+
+.btw input {
+    font-family: inherit;
+    text-align: center;
+    outline: 0;
+    border: 0;
+    background: none;
+    padding: 5px;
+    margin: 0;
+    height: 50px;
+    width: 98%;
+    font-size: 120%;
+    color: inherit;
+}
+
+
+/*Algemeen form en input dingen */
+
+*:focus {
+    outline: 0;
+}
+
+::-webkit-input-placeholder {
+    color: inherit;
+}
+
+:-moz-placeholder {
+    color: inherit;
+}
+
+:-ms-input-placeholder {
+    color: inherit;
+}
+
+::-moz-placeholder {
+    color: inherit;
+}
+
+input,
+button {
+    -webkit-appearance: none;
+}
+
+.btw-btn input:focus {
+    outline: 0;
+    background: rgba(255, 255, 255, .2);
+}
+
+.btw-btn button {
+    font-family: inherit;
+    font-size: 150%;
+    font-weight: 700;
+    line-height: 50px;
+    text-transform: uppercase;
+    display: inline-block;
+    width: auto;
+    height: 50px;
+    margin: 30px 0;
+    padding: 0 20px;
+    color: #ff00ff;
+    border: 2px solid #ff00ff;
+    background: none;
+    border-radius: 30px;
+}
+
+.btw-btn button:hover,
+.btw-button:focus {
+    background: #ff00ff;
+    color: black;
+}
+
+.btw-btn button:active {
+    background: #ff00ff;
+    color: #fff;
+    -webkit-transform: translateY(2px);
+    -ms-transform: translateY(2px);
+    transform: translateY(2px)
+}
+
+
+/* opmaak voor de rekenmachine*/
+
+.calculator {
+    width: 250px;
+    font-family: "system", System UI, "Segoe UI", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, "Lucida Grande", "Roboto", "Helvetica Neue", sans-serif;
+    margin: 0 auto 30px;
+    padding: 5px;
+    height: auto;
+    border-radius: 20px;
+    cursor: arrow;
+    border: 2px solid black;
+}
+
+.readout {
+    font-size: 60px;
+    color: #ffffff;
+    background-color: black;
+    display: block;
+    width: 100%;
+    margin: 0;
+    border: 0;
+    text-align: right;
+    padding: 30px 10px 10px;
+    border-radius: 15px 15px 0 0;
+    font-family: "system", System UI, "Segoe UI", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, "Lucida Grande", "Roboto", "Helvetica Neue", sans-serif;
+    font-weight: 200;
+}
+
+.keys {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    background-color: black;
+    padding: 0 5px 60px;
+    border-radius: 0 0 15px 15px;
+}
+
+.key {
+    vertical-align: center;
+    margin: 3px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    font-size: 25px;
+    border: 0;
+    font-family: inherit;
+    font-weight: 200;
+    transition: all .3s ease;
+}
+
+.key.double {
+    width: 105px;
+    text-align: left;
+    padding-left: 20px;
+    border-radius: 27px;
+}
+
+.misc {
+    background: #a6a6a6;
+    font-size: 20px;
+}
+
+.misc:active,
+.misc:hover {
+    background-color: #eee;
+}
+
+.function {
+    background: #ff9602;
+    color: #ffffff;
+    font-size: 25px;
+    padding: 0 2px;
+}
+
+.function:active,
+.function:hover {
+    background-color: white;
+    color: #ff9602
+}
+
+.numeric {
+    background: #343333;
+    color: white;
+    font-family: inherit;
+}
+
+.numeric:active,
+.numeric:hover {
+    background-color: #555;
+}
+
+sub,
+sup {
+    font-size: 75%;
+    position: relative;
+}
+
+sup {
+    transform: translateY(5px)
+}
+
+sub {
+    transform: translateY(-5px)
+}
+
+.logo-kl {
+    position: fixed;
+    bottom: 30px;
+    left: 30px;
+    width: 60px;
+    padding: 5px;
+    z-index: 5;
+    transition: all 0.3s ease;
+}
+
+.logo-kl:hover {
+    fill: #f6f;
+}
+
+@media only screen and (max-width: 1000px) {
+    .schoolbord,
+    .rm {
+        width: 100%;
+        padding: 60px 30px;
+    }
+}
+    @media only screen and (max-width: 800px) {
+    section {
+        outline: 0
+    }
+    .schoolbord,
+    .rm {
+        padding: 30px;
+    }
+    label {
+        left: 0;
+    }
+    .derde:nth-child(3n+1) {
+        width: 100%;
+        text-align: left;
+    }
+    .derde:nth-child(3n+2),
+    .derde:nth-child(3n+3) {
+        width: 50%;
+        border-bottom: 2px solid rgba(0, 0, 0, .3);
+    }
+    .derde:nth-of-type(3n+2) input {
+        text-align: left;
+        padding-left: 60px
+    }
+}
