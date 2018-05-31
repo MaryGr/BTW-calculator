@@ -10,7 +10,7 @@
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://webmary.nl/btw21.php" />
     <link href='https://fonts.googleapis.com/css?family=Indie+Flower' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" type="text/css" href="css/btw.css" />
+    <link rel="stylesheet" type="text/css" href="btw.css" />
     <script src="js/prefixfree.js"></script>
     <link rel="apple-touch-icon" sizes="180x180" href="/logo/apple-touch-icon.png">
     <link rel="icon" type="image/png" href="/logo/favicon-32x32.png" sizes="32x32">
@@ -20,8 +20,8 @@
     <link rel="shortcut icon" href="/logo/favicon.ico">
     <meta name="msapplication-config" content="/logo/browserconfig.xml">
     <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.26/angular.js"></script>
-    <script src="js/btw21bereken.js"></script>
-    <script src="js/rekenmachine.js"></script>
+    <script src="btw21bereken.js"></script>
+    <script src="rekenmachine.js"></script>
 </head>
 
 <body id="top">
