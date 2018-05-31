@@ -72,7 +72,7 @@ section {
 }
 
 .schoolbord {
-    background: url(../bgr/schoolbord.jpg) #333 no-repeat center center;
+    background: url(schoolbord.jpg) #333 no-repeat center center;
     background-size: cover;
     width: 60%;
 }
