@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>21% BTW berekenen | WebMary</title>
+    <meta name="keywords" content="Mary Grooteman, responsive webdesign, Amsterdam" />
+    <meta name="description" content="btw bereken tool, superhandig!" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href='https://fonts.googleapis.com/css?family=Indie+Flower' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="btw.css" />
+    <script src="prefixfree.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.26/angular.js"></script>
+     <script  type="text/javascript" src="btw21bereken.js"></script>
+    
+</head>
+
+<body id="top">
+    <section class="fleks vp">
+        <div class="schoolbord center">
+            
+      <div>
+         <h2 class="yellow">
+             <a href="btw6.html" class="opzij">6% BTW calculator</a></h2>
+        
+        <div class="turquoise">
+                <h1>💶 21% BTW calculator</h1>
+                <p>Vul een bedrag in, klik dan op  = naast het bedrag wat je net ingevuld hebt.
+                    <br>! Gebruik een punt ( . ) inplv een komma als decimaal teken.</p>
+                <form>
+                    
+                    <div class="btw fleks">
+                        <div class="derde">Bedrag excl. 21% BTW </div>
+                        <div class="derde">
+                            <label>€</label>
+                            <input name="btw_ex" placeholder="0.00"> </div>
+                        <div class="derde">
+                            <input onclick="if (checkNum(btw_ex.value)) compute(this.form,btw_ex.name,btw_data)" type="button" value="=" name="btw_ex_bt"> </div>
+                        <div class="derde">21% BTW</div>
+                        <div class="derde">
+                            <label>€</label>
+                            <input name="btw_deel" placeholder="0.00"> </div>
+                        <div class="derde">
+                            <input onclick="if (checkNum(btw_deel.value)) compute(this.form, btw_deel.name, btw_data)" type="button" value="=" name="btw_deel_bt"> </div>
+                        <div class="derde"> Bedrag incl. 21% BTW</div>
+                        <div class="derde">
+                            <label>€</label>
+                            <input name="btw_inc" placeholder="0.00"> </div>
+                        <div class="derde">
+                            <input onclick="if (checkNum(btw_inc.value)) compute(this.form,btw_inc.name,btw_data)" type="button" value="=" name="btw_inc_bt"> </div>
+                    </div>
+                    <div class="btw-btn">
+                        <button id="button" onclick="form.btw_ex.value=''; form.btw_deel.value=''; form.btw_inc.value='';" type="button" value="alles wissen" name="res5">wissen</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+            </div>
+     
+        <div class="rm">
+            <div ng-app="appleCalculator">
+                <div class="calculator" ng-controller="Calculator">
+                    <input class="readout" type='readonly' disabled ng-model="console">
+                    <div class="keys">
+                        <button class="key misc" ng-click="clearTotal()">C</button>
+                        <button class="key misc" ng-click="changePositivity()"><sup>+</sup>/<sub>−</sub></button>
+                        <button class="key misc" ng-click="getPercentage()">%</button>
+                        <button class="key function" ng-click="divide()">÷</button>
+                        <button class="key numeric" ng-click="print(7)">7</button>
+                        <button class="key numeric" ng-click="print(8)">8</button>
+                        <button class="key numeric" ng-click="print(9)">9</button>
+                        <button class="key function" ng-click="multiply()">×</button>
+                        <button class="key numeric" ng-click="print(4)">4</button>
+                        <button class="key numeric" ng-click="print(5)">5</button>
+                        <button class="key numeric" ng-click="print(6)">6</button>
+                        <button class="key function" ng-click="subtract()">−</button>
+                        <button class="key numeric" ng-click="print(1)">1</button>
+                        <button class="key numeric" ng-click="print(2)">2</button>
+                        <button class="key numeric" ng-click="print(3)">3</button>
+                        <button class="key function" ng-click="add()">+</button>
+                        <button class="key numeric double" ng-click="print(0)">0</button>
+                        <button class="key numeric" ng-click="print('.')">,</button>
+                        <button class="key function" ng-click="equal()">=</button>
+                    </div>
+                </div>
+            </div>
+           
+    <script src="rekenmachine.js"></script>
+        </div>
+        <div class="logo-kl">
+           <div class="logo-kl">
+            <a href="https://github.com/MaryGr/BTW-calculator" target="_blank"><img src="https://webmary.nl/img/github.png" alt="view project on github"></a>
+            <a href="https://webmary.nl">
+                <img src="https://webmary.nl/logo/webmary-sq.png" alt="Logo WebMary.nl"></a>
+        </div>
+    
+        </div>
+    </section>
+    
+</body>
+
+</html>
